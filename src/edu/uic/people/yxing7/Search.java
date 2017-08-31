@@ -86,7 +86,7 @@ public class Search {
 									// TODO Auto-generated catch block
 									e.printStackTrace();
 								}
-			                    maxId = tweet.getId();
+			                    maxId = tweet.getId()-1;//do not duplicate
 			                }
 			            } while ((query = result.nextQuery()) != null);
 			        } catch (TwitterException te) {
